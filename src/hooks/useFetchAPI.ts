@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-const useGameData = (url: string) => {
+const useFetchAPI = (url: string) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -45,4 +45,4 @@ const useGameData = (url: string) => {
   };
 };
 
-export default useGameData;
+export default useFetchAPI;
